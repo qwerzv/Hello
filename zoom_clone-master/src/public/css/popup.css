@@ -1,0 +1,103 @@
+:root {
+  --black-color: #212121;
+  --header-background-color: #102027;
+  --main-background-color: rgba(83, 131, 232,0.3);;
+}
+
+body {
+  margin : 0;
+  color: var(--black-color);
+  overflow: hidden;
+  height: 100%;
+}
+
+#mainform{
+  
+  width: 500px;
+  height: 400px;
+
+  background-color: white;
+  border: 2px solid var(--header-background-color);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+
+  color: wheat;
+  background-color: var(--header-background-color);
+
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 15px;
+
+  font-size: 150%;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main {
+  width: 100%;
+  height: 93vh;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainform input {
+  width: 80%;
+  height: 40%;
+  padding: 3px 10px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+
+
+  color: rgb(0,0,0);
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#mainform input::placeholder {
+  color: rgb(0,0,0);
+}
+
+#mainform input:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#mainform button {
+  width: 250px;
+  height: 50%;
+  padding-right: 4px;
+  margin-left: 120px;
+  margin-top: 10px;
+
+  color: rgb(0,0,0);
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+#mainform button:hover {
+  background-color: #c8cfdf;
+  color: var(--black-color);
+}
